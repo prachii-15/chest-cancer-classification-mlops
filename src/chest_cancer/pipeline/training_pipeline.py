@@ -1,6 +1,7 @@
 from src.chest_cancer.config.configuration import ConfigurationManager
 from src.chest_cancer.components.data_ingestion import DataIngestion
 from src.chest_cancer.components.data_validation import DataValidation
+from src.chest_cancer.components.data_transformation import DataTransformation
 
 class TrainingPipeline:
     def start_data_ingestion(self):
@@ -16,3 +17,10 @@ class TrainingPipeline:
         
         data_validation = DataValidation(data_validation_config)
         data_validation.validate_dataset()
+
+    def start_data_transformation(self):
+        config = ConfigurationManager()
+        data_transformation_config = config.get_data_transformation_config()
+
+        data_transformation = DataTransformation(data_transformation_config)
+        data_transformation.create_data_generators()

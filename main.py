@@ -4,3 +4,4 @@ if __name__ == "__main__":
     obj = TrainingPipeline()
     obj.start_data_ingestion()
     obj.start_data_validation()
+    obj.start_data_transformation()
