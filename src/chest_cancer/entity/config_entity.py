@@ -5,3 +5,9 @@ from pathlib import Path
 class DataIngestionConfig:
     root_dir: Path
     source_dir: Path
+
+@dataclass
+class DataValidationConfig:
+    root_dir: Path
+    data_dir: Path
+    status_file: Path

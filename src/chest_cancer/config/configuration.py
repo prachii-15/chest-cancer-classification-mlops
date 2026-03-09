@@ -1,6 +1,7 @@
 import yaml
 from pathlib import Path
 from src.chest_cancer.entity.config_entity import DataIngestionConfig
+from src.chest_cancer.entity.config_entity import DataValidationConfig
 
 class ConfigurationManager:
 
@@ -18,3 +19,14 @@ class ConfigurationManager:
         )
 
         return data_ingestion_config
+    
+    def get_data_validation_config(self):
+        config = self.config["data_validation"]
+
+        data_validation_config = DataValidationConfig(
+            root_dir = Path(config["root_dir"]),            
+            data_dir = Path(config["data_dir"]),           
+            status_file = Path(config["status_file"])            
+        )
+
+        return data_validation_config
