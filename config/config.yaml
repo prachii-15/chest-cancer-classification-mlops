@@ -1,0 +1,4 @@
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_dir: "C:/Users/Prachi/Downloads/chest_ct_scan_dataset"
+  
