@@ -12,3 +12,8 @@ data_transformation:
   data_dir: artifacts/data_ingestion
   image_size: [224,224]
   batch_size: 32
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  trained_model_path: artifacts/model_trainer/model.keras
+  base_model: ResNet50

@@ -2,6 +2,12 @@ artifacts/
 data/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .ipynb_checkpoints/
-.env
-venv/
+env/
+.venv
+*.h5
+*.keras
+metrics.txt
+.DS_store
