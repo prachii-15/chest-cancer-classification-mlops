@@ -81,7 +81,7 @@ params.yaml
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repo-link>
+git clone https://github.com/prachii-15/chest-cancer-classification-mlops.git
 cd chest-cancer-detection
 ```
 
