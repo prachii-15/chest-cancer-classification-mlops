@@ -6,7 +6,6 @@ from PIL import Image
 # Load model
 model = tf.keras.models.load_model("artifacts/model_trainer/model.keras")
 
-# Class names (change according to your dataset)
 class_names = [
     "adenocarcinoma",
     "large.cell.carcinoma",
